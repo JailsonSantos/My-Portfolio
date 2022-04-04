@@ -17,7 +17,7 @@ export function HomeHero() {
         </TextContainer>
         <InfosContainer>
           <CodeItem data-aos="zoom-in">
-            <span className="comment">// Sobre mim</span>
+            <span className="comment">🧑‍💻Sobre mim</span>
             <span className="purple">Infos</span> {'\u007B'}
             <div>
               Nome: <span className="blue">Jailson,</span>
@@ -29,7 +29,7 @@ export function HomeHero() {
           </CodeItem>
 
           <CodeItem data-aos="zoom-in">
-            <span className="comment">// Sobre meu trabalho</span>
+            <span className="comment">👨‍💻 Sobre meu trabalho</span>
             <span className="purple">Job</span> {'\u007B'}
             <div>
               Função: <span className="blue">Developer Web</span>
