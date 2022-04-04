@@ -9,7 +9,6 @@ import { getPrismicClient } from '../services/prismic';
 
 // Components and Styles
 import Projects from "../components/Projects";
-import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { HomeHero } from "../components/HomeHero";
 import { Knowledge } from "../components/knowledge";
@@ -30,40 +29,7 @@ interface HomeProps {
   projects: IProject[];
 }
 
-import { setCookie, parseCookies } from 'nookies';
-import { useState } from 'react';
-import { DefaultTheme } from 'styled-components';
-import { combineTheme, dark, light } from '../styles/themes';
-
 export default function Home({ projects }: HomeProps) {
-
-  const cookies = parseCookies();
-  const { USER_THEME } = cookies;
-
-  const [theme, setTheme] = useState<DefaultTheme>(combineTheme(light));
-  const activeTheme = theme;
-
-  const toggleTheme = () => {
-
-    if (theme.title === 'light') {
-      setTheme(combineTheme(dark))
-      setCookie(null, 'USER_THEME', 'dark', {
-        maxAge: 86400,
-        path: '/'
-      });
-    } else {
-      setTheme(combineTheme(light))
-      setCookie(null, 'USER_THEME', 'light', {
-        maxAge: 86400,
-        path: '/'
-      });
-    }
-  };
-
-  useEffect(() => {
-    USER_THEME === 'light' ? setTheme(light) : setTheme(dark);
-  }, [theme]);
-
 
   useEffect(() => {
     Aos.init({ duration: 1500 });

@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 
 import NavLink from './NavLink';
 import { ThemeContext } from 'styled-components';
@@ -7,14 +7,6 @@ import Switch from 'react-switch';
 
 import { Container, Nav, Sol, Lua } from './styles';
 
-/* import { setCookie, parseCookies } from 'nookies';
-import { useEffect, useState } from 'react';
-import { combineTheme, dark, light } from '../../styles/themes';
-import { DefaultTheme } from 'styled-components';
-
-import { RiMoonClearFill } from 'react-icons/ri'
-import { IoMdSunny } from 'react-icons/io'
- */
 export function Header() {
 
   const { title, colors } = useContext(ThemeContext);
