@@ -12,16 +12,17 @@ export default createGlobalStyle`
       height: 5px;
     }
     ::-webkit-scrollbar-thumb {
-      background: ${({ theme }) => theme.primary};
+      background: ${props => props.theme.colors.primary};
       border-radius: 10px;
     }
     ::-webkit-scrollbar-track{
-      background: ${({ theme }) => lighten(0.4, theme.primary)};
+      background: ${(props) => props.theme.colors.primaryLight};
     }
   }
 
   body {
-    background: ${props => props.theme.background};
+    background: ${props => props.theme.colors.background};
+    color: ${props => props.theme.colors.text};
     font: 400 1rem 'Poppins', sans-serif;
   }
   
@@ -48,15 +49,15 @@ export default createGlobalStyle`
     max-width: 85rem;
     padding: 0 1rem;
 
-    @media(max-width:1450px) {
+    @media(max-width:1440px) {
       max-width: 70rem;
     }
 
-    @media(max-width:1000px) {
+    @media(max-width:1024px) {
       max-width: 50rem;
     }
 
-    @media(max-width:700px) {
+    @media(max-width:768px) {
       padding: 0 2rem;
     }
   }
