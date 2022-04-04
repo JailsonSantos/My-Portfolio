@@ -6,7 +6,7 @@ import { Container } from './styles';
 export function Experiences() {
   return (
     <Container>
-      <SectionTitle title="02 Anos" description="de experiências" />
+      <SectionTitle title="Minhas" description="experiências" />
       <section>
         <ExperienceItem year="2022" title="Developer FullStack" description="Desenvolvimento de softwares responsivos" />
         <ExperienceItem year="2021" title="Developer FrontEnd" description="Desenvolvimento de Interefaces Modernas" />

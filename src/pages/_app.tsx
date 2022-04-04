@@ -1,6 +1,6 @@
 import { AppProps } from 'next/app';
 
-import { useCallback, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import GlobalStyles from '../styles/global';
 
 import { ThemeProvider, DefaultTheme } from 'styled-components';
@@ -38,7 +38,7 @@ function App({ Component, pageProps }: AppProps) {
   };
 
 
-  useCallback(() => {
+  useEffect(() => {
     USER_THEME === 'light' ? setTheme(light) : setTheme(dark);
   }, [theme, USER_THEME]);
 
