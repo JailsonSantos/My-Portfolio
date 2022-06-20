@@ -2,7 +2,7 @@ import { lighten } from 'polished';
 import styled from 'styled-components';
 
 
-import { IoMdClose, IoMdSunny } from 'react-icons/io'
+import { IoMdSunny } from 'react-icons/io'
 import { RiMoonClearFill } from 'react-icons/ri'
 
 
@@ -26,8 +26,8 @@ export const Container = styled.div`
         .react-switch-bg {
           div {
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
           }
         }
       }

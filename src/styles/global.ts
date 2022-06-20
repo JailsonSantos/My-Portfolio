@@ -1,4 +1,3 @@
-import { lighten } from 'polished';
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
@@ -21,9 +20,9 @@ export default createGlobalStyle`
   }
 
   body {
-    background: ${props => props.theme.colors.background};
-    color: ${props => props.theme.colors.text};
     font: 400 1rem 'Poppins', sans-serif;
+    color: ${props => props.theme.colors.text};
+    background: ${props => props.theme.colors.background};
   }
   
   img {
@@ -46,8 +45,8 @@ export default createGlobalStyle`
   .container {
     width: 100%;
     margin: 0 auto;
-    max-width: 85rem;
     padding: 0 1rem;
+    max-width: 85rem;
 
     @media(max-width:1440px) {
       max-width: 70rem;
