@@ -1,6 +1,6 @@
 <h1 align="center">Portfólio</h1>
 <p align="center">
-  Este projeto tem como objetivo mostrar as minhas habilidades e experiências como Dev.
+  Este projeto tem como objetivo mostrar as minhas habilidades e experiências como Developer FullStack.
 </p>
 
 <h2 align="center">Tabela de Conteúdos</h2>
@@ -21,12 +21,11 @@
 
 <h3 align="left" id="layout">Versão Web responsivo</h3>
 
-![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/11697713/161599736-23d7818d-82e3-41e8-9d4e-b0a2369aa0a2.gif)
+![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/11697713/222180013-91196502-a85c-4d80-80c7-44789f81007b.gif)
 
 <h3 align="left" id="layout">Versão Mobile</h3>
 
-![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/11697713/161599246-be08148f-abd2-4e62-968a-8097e60c3318.gif)
-
+![ezgif com-gif-maker (5)](https://user-images.githubusercontent.com/11697713/222182167-9db1799e-839b-49d2-9594-850d22381cd2.gif)
 
 <h3 align="left" id="tecnologias">🛠 Tecnologias</h3>
 <p align="justify">As seguintes Tecnologias e bibliotecas que foram usadas na construção do projeto</p>

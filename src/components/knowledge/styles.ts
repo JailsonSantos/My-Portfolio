@@ -91,4 +91,18 @@ export const ConhecimentoContainer = styled.div`
     margin-bottom: 0;
     box-shadow: 0 0 .9em ${({ theme }) => theme.colors.primary};
   }
+
+  @media(max-width: 425px){
+    width: 130px;
+    height: 100px;
+
+    p{
+      font-size: 15px;
+    }
+    
+    svg{
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
 `;

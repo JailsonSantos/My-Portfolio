@@ -18,24 +18,35 @@ export function HomeHero() {
         <InfosContainer>
           <CodeItem data-aos="zoom-in">
             <span className="comment">🧑‍💻Sobre mim</span>
-            <span className="purple">Infos</span> {'\u007B'}
+            <span className="purple">Infos</span> {'\u007B'} {/* Abre Chaves */}
             <div>
               Nome: <span className="blue">Jailson,</span>
             </div>
             <div>
               Sobrenome: <span className="blue">Lins</span>
             </div>
-            {'\u007D'}
+            <div>
+              Graduação: <span className="blue">Sistemas de Informação</span>
+            </div>
+            <div>
+              Instituição: <span className="blue">Centro Universitário UNDB</span>
+            </div>
+            {'\u007D'} {/* Fecha Chaves */}
           </CodeItem>
 
           <CodeItem data-aos="zoom-in">
             <span className="comment">👨‍💻 Sobre meu trabalho</span>
             <span className="purple">Job</span> {'\u007B'}
             <div>
-              Função: <span className="blue">Developer Web</span>
+              Função: <span className="blue">Developer FullStack</span>
             </div>
             <div>
-              Empresa: <span className="blue">MorohSoftware</span>
+              Empresa: <span className="blue">Moroh Software</span>
+            </div>
+            <div>
+              Atividades: <span style={{ textAlign: 'justify' }} className="blue">
+                Desenvolvimento de softwares.
+              </span>
             </div>
             {'\u007D'}
           </CodeItem>

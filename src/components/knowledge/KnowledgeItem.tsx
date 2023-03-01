@@ -12,7 +12,7 @@ interface KnowledgeItemProps {
 export function KnowledgeItem({ title, icon }: KnowledgeItemProps) {
   return (
     <ConhecimentoContainer data-aos="fade-up">
-      <p>{title}</p>
+      <p style={{ textAlign: 'center' }}>{title}</p>
       {icon}
     </ConhecimentoContainer>
   )
