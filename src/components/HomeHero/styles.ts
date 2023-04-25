@@ -10,6 +10,7 @@ export const Container = styled.section`
 
   > img {
     flex: .5;
+    max-width: 400px;
     border-radius: 100px;
     border-bottom: 3px solid ${({ theme }) => theme.colors.primary} ;
   }
@@ -52,7 +53,7 @@ export const TextContainer = styled.section`
   margin-bottom: 2rem;
 
   h1{
-    font-size: 8rem;
+    font-size: 3.5rem;
     color: ${({ theme }) => theme.colors.primary};
   }
 

@@ -93,3 +93,4 @@ export const getStaticProps: GetStaticProps = async () => {
 }
 
 // revalidate: 86400 = 24 horas
+ 

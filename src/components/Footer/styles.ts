@@ -5,7 +5,9 @@ export const Container = styled.footer`
   width: 100%;
   height: 5rem;
   display: flex;
+  margin: 0 auto;
   margin-top: 4rem;
+  max-width: 85rem;
   align-items: center;
   justify-content: center;
   border-top: 1px solid ${({ theme }) => theme.colors.backgroundLight};
