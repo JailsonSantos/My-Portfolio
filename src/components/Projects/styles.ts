@@ -55,29 +55,21 @@ export const Container = styled.section`
   }
 `;
 
-
 export const ProjectContainer = styled.div<ProjectProps>`
   width: 100%;
   height: 25rem;
   display: flex;
   position: relative;
   align-items: flex-end;
-
-  &:hover{
-    > section{
-      > div.text{
-        right: -12rem;
-      }
-      
-      > div.overlay{
-        opacity: 0.2;
-      }
   
-      box-shadow: 0 0 .9em ${({ theme }) => theme.colors.primary};
+  &:hover{
+
+    > section{
+      box-shadow: 0 0 .9rem ${({ theme }) => theme.colors.primary};
     }
     
     > button a {
-      color: ${({ theme }) => theme.colors.primary}
+      color: ${({ theme }) => theme.colors.primary};
     }
   }
   
@@ -107,7 +99,7 @@ export const ProjectContainer = styled.div<ProjectProps>`
     background-size: cover;
     border: 1px solid ${({ theme }) => theme.colors.primary};
 
-    > div.overlay{
+/*     > div.overlay{
       width: 100%;
       height: 100%;
       opacity: 0.1;
@@ -115,27 +107,42 @@ export const ProjectContainer = styled.div<ProjectProps>`
       position: absolute;
       border-radius: 10px;
       background: ${({ theme }) => theme.colors.gradient};
+    } */
+
+    > div.overlay {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        position: absolute;
+        border-radius: 10px;
+        opacity: ${({ theme }) => theme.title == 'dark' ? 0.8 : 0.75};
+        background: ${({ theme }) => theme.title == 'dark' ? theme.colors.background : theme.colors.textHighlight};
+    
+      &:hover{
+        border-color: ${({ theme }) => theme.colors.primary};
+        opacity: ${({ theme }) => theme.title == 'dark' ? 0.75 : 0.4};
+        background: ${({ theme }) => theme.title == 'dark' ? theme.colors.background : theme.colors.textHighlight};
+        }
     }
 
     > div.text{
       top: 3rem;
-      right: -10rem;
+      left: 1rem;
       transition: 0.5s;
       width: fit-content;
       position: absolute;
 
       h1{
         font-size: 2.5rem;
-        text-shadow: -4px 4px 12px #11172b;
-        color: ${({ theme }) => theme.colors.primary};
+        color: ${({ theme }) => theme.title == 'dark' ? theme.colors.primary : theme.colors.secondaryTitle};
       }
 
-      
       h2{
         font-size: 2rem;
         font-weight: 300;
-        text-shadow: -4px 5px 22px #11172b;
-        color: ${({ theme }) => theme.colors.secondary};
+        color: ${({ theme }) => theme.colors.secondaryTitle};
       }
     }
   }
@@ -148,15 +155,8 @@ export const ProjectContainer = styled.div<ProjectProps>`
     }
 
     > section > div.text{
-      right: 0;
-      left: -10rem;
-      text-align: right;
-    }
-
-    &:hover{
-      > section > div.text {
-        left: -12rem;
-      }
+      left: 1rem;
+      text-align: left;
     }
   }
 
@@ -184,7 +184,7 @@ export const ProjectContainer = styled.div<ProjectProps>`
         left: 1rem;
 
         h1{
-          color: ${({ theme }) => theme.colors.secondaryTitle};
+          color: ${({ theme }) => theme.colors.primary};
         }
 
           h2{

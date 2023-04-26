@@ -32,6 +32,7 @@ export const AreaProjectItem = styled.div`
   padding: 0 1rem;
   flex-wrap: wrap;
   max-width: 85rem;
+  margin-top: 4rem;
   align-items: center;
   justify-content: center;
 `;

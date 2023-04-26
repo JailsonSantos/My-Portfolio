@@ -19,7 +19,7 @@ export const Container = styled.footer`
     max-width: 85rem;
     align-items: center;
     justify-content: space-between;
-
+  }
   
     @media(max-width:1440px) {
       max-width: 70rem;
@@ -27,8 +27,8 @@ export const Container = styled.footer`
     
     @media(max-width:1024px) {
       max-width: 50rem;
+      padding: 0 1rem;
     }  
-  }
 
 
   @media(max-width: 768px){

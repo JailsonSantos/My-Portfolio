@@ -11,7 +11,7 @@ export const Container = styled.div`
     margin-top: 5rem;
 
     padding-bottom: 5rem;
-    border-bottom: 3px solid ${({ theme }) => theme.colors.primary};
+    border-bottom: 1px solid ${({ theme }) => theme.colors.backgroundLight};
 
     @media(max-width: 1024px){
       gap: 1rem;

@@ -5,12 +5,14 @@ export const ProjectsContainer = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
+  max-width: 65rem;
+  margin: 0 auto;
   flex-direction: column;
-
+  
   > main{
     width: 100%;
-    margin: 2rem auto;
-    
+    margin: 1rem auto;
+        
     p{
       font-weight: 300;
       font-size: 1.5rem;
@@ -21,7 +23,7 @@ export const ProjectsContainer = styled.div`
     button {
       border: none;
       transition: 0.5s;
-      margin-top: 2rem;
+      margin-top: 1rem;
       padding: 0.8rem 3rem;
       border-radius: 0.5rem;
       background-color: ${({ theme }) => theme.colors.primary};

@@ -9,6 +9,7 @@ export const HomeContainer = styled.div`
   > main {
     gap: 2rem;
     display: flex;
+    margin-top: 4rem;
     flex-direction: column;
   }
 `;

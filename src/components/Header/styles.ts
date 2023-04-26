@@ -11,27 +11,33 @@ interface NavLinkContainerProps {
 }
 
 export const Container = styled.div`
-  width: 100%;
-  height: 4rem;
-  display: flex;
-  margin: 0 auto;
-  padding: 0 2rem;
-  max-width: 85rem;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid ${({ theme }) => theme.colors.backgroundLight};
 
-  .right {
-      .myToggle {
-        .react-switch-bg {
-          div {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+  width: 100%;
+  z-index: 9999;
+  position: fixed;
+  background-color: ${({ theme }) => theme.colors.background};
+  
+  .container {
+    width: 100%;
+    height: 4rem;
+    margin: 0 auto;
+    display: flex;
+    max-width: 85rem;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid ${({ theme }) => theme.colors.backgroundLight};
+
+    .right {
+        .myToggle {
+          .react-switch-bg {
+            div {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
           }
         }
       }
-    }
     
     @media(max-width:1440px) {
       max-width: 70rem;
@@ -45,6 +51,8 @@ export const Container = styled.div`
     @media(max-width:768px) {
       padding: 0 2rem;
     }
+
+  }
 `;
 
 export const Nav = styled.ul`
